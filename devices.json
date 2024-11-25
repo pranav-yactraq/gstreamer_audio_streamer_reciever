@@ -1,0 +1,200 @@
+{
+    "devices": [
+        {
+            "name": "Default Audio Capture Device",
+            "class": "Audio/Source",
+            "caps": "audio/x-raw, format=F32LE, layout=interleaved, rate=48000, channels=2, channel-mask=0x0000000000000003",
+            "device.api": "wasapi2",
+            "device.id": "{2EEF81BE-33FA-4800-9670-1CD474972C3F}",
+            "device.default": "true",
+            "wasapi2.device.description": "Default Audio Capture Device",
+            "wasapi2.device.loopback": "false",
+            "gst-launch-1.0 wasapi2src device": "\"\\{2EEF81BE-33FA-4800-9670-1CD474972C3F\\}\" ! ..."
+        },
+        {
+            "name": "Microphone (Realtek(R) Audio)",
+            "class": "Audio/Source",
+            "caps": "audio/x-raw, format=F32LE, layout=interleaved, rate=48000, channels=2, channel-mask=0x0000000000000003",
+            "device.api": "wasapi2",
+            "device.id": "\\\\?\\SWD#MMDEVAPI#{0.0.1.00000000}.{cb3ae92b-2e72-4779-9322-5c9545207b81}#{2eef81be-33fa-4800-9670-1cd474972c3f}",
+            "device.default": "false",
+            "wasapi2.device.description": "Microphone (Realtek(R) Audio)",
+            "wasapi2.device.loopback": "false",
+            "gst-launch-1.0 wasapi2src device": "\"\\\\\\\\\\?\\\\SWD\\#MMDEVAPI\\#\\{0.0.1.00000000\\}.\\{cb3ae92b-2e72-4779-9322-5c9545207b81\\}\\#\\{2eef81be-33fa-4800-9670-1cd474972c3f\\}\" ! ..."
+        },
+        {
+            "name": "Stereo Mix (Realtek(R) Audio)",
+            "class": "Audio/Source",
+            "caps": "audio/x-raw, format=F32LE, layout=interleaved, rate=48000, channels=2, channel-mask=0x0000000000000003",
+            "device.api": "wasapi2",
+            "device.id": "\\\\?\\SWD#MMDEVAPI#{0.0.1.00000000}.{153f3b57-9aa3-41e3-a166-be2ca20a6dcf}#{2eef81be-33fa-4800-9670-1cd474972c3f}",
+            "device.default": "false",
+            "wasapi2.device.description": "Stereo Mix (Realtek(R) Audio)",
+            "wasapi2.device.loopback": "false",
+            "gst-launch-1.0 wasapi2src device": "\"\\\\\\\\\\?\\\\SWD\\#MMDEVAPI\\#\\{0.0.1.00000000\\}.\\{153f3b57-9aa3-41e3-a166-be2ca20a6dcf\\}\\#\\{2eef81be-33fa-4800-9670-1cd474972c3f\\}\" ! ..."
+        },
+        {
+            "name": "Default Audio Render Device",
+            "class": "Audio/Source",
+            "caps": "audio/x-raw, format=F32LE, layout=interleaved, rate=48000, channels=2, channel-mask=0x0000000000000003",
+            "device.api": "wasapi2",
+            "device.id": "{E6327CAD-DCEC-4949-AE8A-991E976A79D2}",
+            "device.default": "true",
+            "wasapi2.device.description": "Default Audio Render Device",
+            "wasapi2.device.loopback": "true",
+            "gst-launch-1.0 wasapi2src device": "\"\\{E6327CAD-DCEC-4949-AE8A-991E976A79D2\\}\" loopback"
+        },
+        {
+            "name": "Speakers (Realtek(R) Audio)",
+            "class": "Audio/Source",
+            "caps": "audio/x-raw, format=F32LE, layout=interleaved, rate=48000, channels=2, channel-mask=0x0000000000000003",
+            "device.api": "wasapi2",
+            "device.id": "\\\\?\\SWD#MMDEVAPI#{0.0.0.00000000}.{c92ae1cd-1626-4f17-aac0-40b1811b5211}#{e6327cad-dcec-4949-ae8a-991e976a79d2}",
+            "device.default": "false",
+            "wasapi2.device.description": "Speakers (Realtek(R) Audio)",
+            "wasapi2.device.loopback": "true",
+            "gst-launch-1.0 wasapi2src device": "\"\\\\\\\\\\?\\\\SWD\\#MMDEVAPI\\#\\{0.0.0.00000000\\}.\\{c92ae1cd-1626-4f17-aac0-40b1811b5211\\}\\#\\{e6327cad-dcec-4949-ae8a-991e976a79d2\\}\" loopback"
+        },
+        {
+            "name": "Default Audio Render Device",
+            "class": "Audio/Sink",
+            "caps": "audio/x-raw, format=F32LE, layout=interleaved, rate=48000, channels=2, channel-mask=0x0000000000000003",
+            "device.api": "wasapi2",
+            "device.id": "{E6327CAD-DCEC-4949-AE8A-991E976A79D2}",
+            "device.default": "true",
+            "wasapi2.device.description": "Default Audio Render Device",
+            "gst-launch-1.0 ... ! wasapi2sink device": "\"\\{E6327CAD-DCEC-4949-AE8A-991E976A79D2\\}\""
+        },
+        {
+            "name": "Speakers (Realtek(R) Audio)",
+            "class": "Audio/Sink",
+            "caps": "audio/x-raw, format=F32LE, layout=interleaved, rate=48000, channels=2, channel-mask=0x0000000000000003",
+            "device.api": "wasapi2",
+            "device.id": "\\\\?\\SWD#MMDEVAPI#{0.0.0.00000000}.{c92ae1cd-1626-4f17-aac0-40b1811b5211}#{e6327cad-dcec-4949-ae8a-991e976a79d2}",
+            "device.default": "false",
+            "wasapi2.device.description": "Speakers (Realtek(R) Audio)",
+            "gst-launch-1.0 ... ! wasapi2sink device": "\"\\\\\\\\\\?\\\\SWD\\#MMDEVAPI\\#\\{0.0.0.00000000\\}.\\{c92ae1cd-1626-4f17-aac0-40b1811b5211\\}\\#\\{e6327cad-dcec-4949-ae8a-991e976a79d2\\}\""
+        },
+        {
+            "name": "Speakers (Realtek(R) Audio)",
+            "class": "Audio/Sink",
+            "caps": "audio/x-raw, format=S16LE, layout=interleaved, rate=[ 1, 2147483647 ], channels=[ 1, 2 ]",
+            "audio/x-raw, format": "U8, layout",
+            "audio/x-ac3, framed": "true",
+            "audio/x-dts, framed": "true",
+            "device.api": "directsound",
+            "device.guid": "{C92AE1CD-1626-4F17-AAC0-40B1811B5211}",
+            "directsound.device.driver": "{0.0.0.00000000}.{c92ae1cd-1626-4f17-aac0-40b1811b5211}",
+            "directsound.device.description": "Speakers (Realtek(R) Audio)",
+            "gst-launch-1.0 ... ! directsoundsink device": "\"\\{C92AE1CD-1626-4F17-AAC0-40B1811B5211\\}\""
+        },
+        {
+            "name": "Primary Sound Driver",
+            "class": "Audio/Sink",
+            "caps": "audio/x-raw, format=S16LE, layout=interleaved, rate=[ 1, 2147483647 ], channels=[ 1, 2 ]",
+            "audio/x-raw, format": "U8, layout",
+            "audio/x-ac3, framed": "true",
+            "audio/x-dts, framed": "true",
+            "device.api": "directsound",
+            "device.guid": "(NULL)",
+            "directsound.device.driver": "",
+            "directsound.device.description": "Primary Sound Driver"
+        },
+        {
+            "name": "Stereo Mix (Realtek(R) Audio)",
+            "class": "Audio/Source",
+            "caps": "audio/x-raw, format={ (string)S16LE, (string)S8 }, layout=interleaved, rate=[ 1, 2147483647 ], channels=[ 1, 2 ]",
+            "device.api": "directsound",
+            "device.guid": "{153F3B57-9AA3-41E3-A166-BE2CA20A6DCF}",
+            "directsound.device.driver": "{0.0.1.00000000}.{153f3b57-9aa3-41e3-a166-be2ca20a6dcf}",
+            "directsound.device.description": "Stereo Mix (Realtek(R) Audio)",
+            "gst-launch-1.0 directsoundsrc device": "\"\\{153F3B57-9AA3-41E3-A166-BE2CA20A6DCF\\}\" ! ..."
+        },
+        {
+            "name": "Microphone (Realtek(R) Audio)",
+            "class": "Audio/Source",
+            "caps": "audio/x-raw, format={ (string)S16LE, (string)S8 }, layout=interleaved, rate=[ 1, 2147483647 ], channels=[ 1, 2 ]",
+            "device.api": "directsound",
+            "device.guid": "{CB3AE92B-2E72-4779-9322-5C9545207B81}",
+            "directsound.device.driver": "{0.0.1.00000000}.{cb3ae92b-2e72-4779-9322-5c9545207b81}",
+            "directsound.device.description": "Microphone (Realtek(R) Audio)",
+            "gst-launch-1.0 directsoundsrc device": "\"\\{CB3AE92B-2E72-4779-9322-5C9545207B81\\}\" ! ..."
+        },
+        {
+            "name": "Primary Sound Capture Driver",
+            "class": "Audio/Source",
+            "caps": "audio/x-raw, format={ (string)S16LE, (string)S8 }, layout=interleaved, rate=[ 1, 2147483647 ], channels=[ 1, 2 ]",
+            "device.api": "directsound",
+            "device.guid": "(NULL)",
+            "directsound.device.driver": "",
+            "directsound.device.description": "Primary Sound Capture Driver"
+        },
+        {
+            "name": "Microphone (Realtek(R) Audio)",
+            "class": "Audio/Source",
+            "caps": "audio/x-raw",
+            "device.api": "wasapi",
+            "device.strid": "{0.0.1.00000000}.{cb3ae92b-2e72-4779-9322-5c9545207b81}",
+            "wasapi.device.description": "Microphone (Realtek(R) Audio)",
+            "gst-launch-1.0 wasapisrc device": "\"\\{0.0.1.00000000\\}.\\{cb3ae92b-2e72-4779-9322-5c9545207b81\\}\" ! ...",
+            "format": "F32LE",
+            "layout": "interleaved",
+            "rate": "48000",
+            "channels": "2",
+            "channel-mask": "0x0000000000000003"
+        },
+        {
+            "name": "Stereo Mix (Realtek(R) Audio)",
+            "class": "Audio/Source",
+            "caps": "audio/x-raw",
+            "device.api": "wasapi",
+            "device.strid": "{0.0.1.00000000}.{153f3b57-9aa3-41e3-a166-be2ca20a6dcf}",
+            "wasapi.device.description": "Stereo Mix (Realtek(R) Audio)",
+            "gst-launch-1.0 wasapisrc device": "\"\\{0.0.1.00000000\\}.\\{153f3b57-9aa3-41e3-a166-be2ca20a6dcf\\}\" ! ...",
+            "format": "F32LE",
+            "layout": "interleaved",
+            "rate": "48000",
+            "channels": "2",
+            "channel-mask": "0x0000000000000003"
+        },
+        {
+            "name": "Speakers (Realtek(R) Audio)",
+            "class": "Audio/Sink",
+            "caps": "audio/x-raw, format=F32LE, layout=interleaved, rate=48000, channels=2, channel-mask=0x0000000000000003",
+            "device.api": "wasapi",
+            "device.strid": "{0.0.0.00000000}.{c92ae1cd-1626-4f17-aac0-40b1811b5211}",
+            "wasapi.device.description": "Speakers (Realtek(R) Audio)",
+            "gst-launch-1.0 ... ! wasapisink device": "\"\\{0.0.0.00000000\\}.\\{c92ae1cd-1626-4f17-aac0-40b1811b5211\\}\""
+        }
+    ],
+    "wasapisrc_devices": [
+        {
+            "name": "Microphone (Realtek(R) Audio)",
+            "class": "Audio/Source",
+            "caps": "audio/x-raw",
+            "device.api": "wasapi",
+            "device.strid": "{0.0.1.00000000}.{cb3ae92b-2e72-4779-9322-5c9545207b81}",
+            "wasapi.device.description": "Microphone (Realtek(R) Audio)",
+            "gst-launch-1.0 wasapisrc device": "\"\\{0.0.1.00000000\\}.\\{cb3ae92b-2e72-4779-9322-5c9545207b81\\}\" ! ...",
+            "format": "F32LE",
+            "layout": "interleaved",
+            "rate": "48000",
+            "channels": "2",
+            "channel-mask": "0x0000000000000003"
+        },
+        {
+            "name": "Stereo Mix (Realtek(R) Audio)",
+            "class": "Audio/Source",
+            "caps": "audio/x-raw",
+            "device.api": "wasapi",
+            "device.strid": "{0.0.1.00000000}.{153f3b57-9aa3-41e3-a166-be2ca20a6dcf}",
+            "wasapi.device.description": "Stereo Mix (Realtek(R) Audio)",
+            "gst-launch-1.0 wasapisrc device": "\"\\{0.0.1.00000000\\}.\\{153f3b57-9aa3-41e3-a166-be2ca20a6dcf\\}\" ! ...",
+            "format": "F32LE",
+            "layout": "interleaved",
+            "rate": "48000",
+            "channels": "2",
+            "channel-mask": "0x0000000000000003"
+        }
+    ]
+}
