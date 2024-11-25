@@ -1,7 +1,7 @@
 ## How to Run
 1. Start the server - python3 gsteramer_persitent_streamer.py 
-2. In another terminal run $ python3 gstreamer_audio_devices_list_to_json.py -- Finds all devices then sorts among them the wasapisrc_devices and are stored in devices.json file.
-3. To start streaming audio run python3 gstreamer_audio_streamer_vanilla.py 
+2. In another terminal run $ python3 gstreamer_audio_devices_list_to_json.py -- Finds all devices then sorts among them the wasapisrc_devices, then writes the both in devices.json file.
+3. To start streaming audio run python3 gstreamer_audio_streamer_vanilla.py [It automatically detects ids of wasapisrc based device from the previous step written devices.json file.]
 
 ## Requirements
 1. Stereo Mix Enabled. In the case of device speaker, for Windows OS Platform we need Stereo Mix enabled at our client device. Stereo Mix is the device that generally capture the sound coming from the client device. Hence Enabling Stereo Mix is must for the following script to capture audio from device.
