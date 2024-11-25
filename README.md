@@ -12,9 +12,15 @@
 
 ## Format 
 F32LE Channel 3 48000 , wav file setter width = 2 ->  bad
+
 F32LE Channel 3 48000 , wav file setter width = 4 -> bad
+
 F32LE Channel 2 48000 , wav file setter width = 4 -> bad
+
 S16LE Channel 2 48000 , wav file setter width = 2 -> bad
+
 S16LE Channel 2 48000 , wav file setter width = 4-> hearable okayish quality fastforwarded.
+
 #### S16LE Channel 3 48000 , wav file setter width = 2-> best conversion.
+
 S!6LE Channel 3 48000 , wav file setter width = 4-> hearable fast forwarded.
